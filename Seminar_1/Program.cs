@@ -46,15 +46,17 @@ Console.WriteLine ("Введите второе число: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine ("Введите второе число: ");
 int numС = Convert.ToInt32(Console.ReadLine());
-int max = numA;
 
-if (max<numB)
+int maxnum = numA;
+
+if (maxnum<numB)
 {
-    int max = numB;
-}
-if (max<numC)
-{
-    int max = numС;
+    maxnum = numB;
 }
 
-    Console.WriteLine ("Большее число: " + max);
+if (maxnum<numC)
+{
+    maxnum = numС;
+}
+
+    Console.WriteLine ("Большее число: " + maxnum);
