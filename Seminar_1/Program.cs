@@ -38,25 +38,47 @@
 
 // * ---------------------------РЕШЕНИЕ------------------------------ *
 
-Console.WriteLine ("Задача 4. В этой программе мы сравним три целых числа и покажем какое из них больше");
+// Console.WriteLine ("Задача 4. В этой программе мы сравним три целых числа и покажем какое из них больше");
 
-Console.WriteLine ("Введите первое число: ");
-int numA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("Введите второе число: ");
-int numB = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("Введите второе число: ");
-int numС = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine ("Введите первое число: ");
+// int numA = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine ("Введите второе число: ");
+// int numB = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine ("Введите второе число: ");
+// int numС = Convert.ToInt32(Console.ReadLine());
 
-int maxnum = numA;
+// int maxnum = numA;
 
-if (maxnum<numB)
+// if (maxnum<numB)
+// {
+//     maxnum = numB;
+// }
+
+// if (maxnum<numС)
+// {
+//     maxnum = numС;
+// }
+
+//     Console.WriteLine ("Большее число: " + maxnum);
+
+// *----------------------------------------------------------------------------------*
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+// *------------------------------РЕШЕНИЕ----------------------------------------*
+
+Console.WriteLine ("Задача 4. В этой программе мы определим является ли ваше число четным");
+Console.WriteLine ("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num % 2 == 0)
 {
-    maxnum = numB;
+    Console.WriteLine ("Число" + num + "ЧЕТНОЕ");
 }
-
-if (maxnum<numС)
+else
 {
-    maxnum = numС;
+    Console.WriteLine ("Число" + num + "НЕЧЕТНОЕ");
 }
-
-    Console.WriteLine ("Большее число: " + maxnum);
