@@ -54,7 +54,7 @@ if (maxnum<numB)
     maxnum = numB;
 }
 
-if (maxnum<numC)
+if (maxnum<numС)
 {
     maxnum = numС;
 }
