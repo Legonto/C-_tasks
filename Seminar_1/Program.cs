@@ -96,6 +96,8 @@ else
 // Console.WriteLine ("Введите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 // int i=2;
+// if (num>=i)
+// {
 // while (i<=num)
 // {
 //     if (i % 2 ==0)
@@ -107,4 +109,9 @@ else
 //     {
 //         i++;
 //     }
+// }
+// }
+// else
+// {
+//     Console.Write ("Ошибка, введите число больше 1.");
 // }
