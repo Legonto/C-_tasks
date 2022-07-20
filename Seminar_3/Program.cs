@@ -3,26 +3,31 @@
 // 23432 -> да
 // 12821 -> да
 
-// Console.WriteLine("Мы узнаем является ли ваше число палиндромом");
-// Console.Write("Введите пятизначное число: ");
-// string? number = Console.ReadLine();
+//------------------------------РЕШЕНИЕ--------------------------------
 
-// void CheckingNumber(string number){
-//   if (number[0]==number[4] || number[1]==number[3]){
-//     Console.WriteLine($"Ваше число: {number} - палиндром.");
-//   }
-//   else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
-// }
+Console.WriteLine("Мы узнаем является ли ваше число палиндромом");
+Console.Write("Введите пятизначное число: ");
+string? number = Console.ReadLine();
 
-// if (number!.Length == 5){
-//   CheckingNumber(number);
-// }
-// else Console.WriteLine($"Введи правильное число");
+void CheckingNumber(string number){
+  if (number[0]==number[4] || number[1]==number[3]){
+    Console.WriteLine($"Ваше число: {number} - палиндром.");
+  }
+  else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
+}
 
+if (number!.Length == 5){
+  CheckingNumber(number);
+}
+else Console.WriteLine($"Введи правильное число");
+
+//--------------------------------------------------------------------------------------
 
 // Задача 21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
+
+//------------------------------РЕШЕНИЕ--------------------------------
 
 // Console.WriteLine("В этой задаче мы найдем расстояние между двух точек в 3D пространстве");
 // int x1 = Coordinate("x", "A");
@@ -50,32 +55,35 @@
 
 // Console.WriteLine($"Длина отрезка  {segmentLength}");
 
+//----------------------------------------------------------------------------------
 
 // //Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // // 3 -> 1, 8, 27
 // // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("В этой задаче мы найдем все кубы чисел до вашего");
-Console.Write("Введите число: ");
-int cube = Convert.ToInt32(Console.ReadLine());
+//------------------------------РЕШЕНИЕ--------------------------------
 
-void Cube(int[] cube){
-  int counter = 1;
-  int length = cube.Length;
-  while (counter <  length){
-    cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
-    counter++;
-  }
-}
-void PrintArry(int[] coll){
-  int count = coll.Length;
-  int index = 1;
-  while(index < count){
-    Console.Write(coll[index]+ " ");
-    index++;
-  }
-} 
+// Console.WriteLine("В этой задаче мы найдем все кубы чисел до вашего");
+// Console.Write("Введите число: ");
+// int cube = Convert.ToInt32(Console.ReadLine());
 
-int[] arry = new int[cube+1];
-Cube(arry);
-PrintArry(arry);
+// void Cube(int[] cube){
+//   int counter = 1;
+//   int length = cube.Length;
+//   while (counter <  length){
+//     cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
+//     counter++;
+//   }
+// }
+// void PrintArry(int[] coll){
+//   int count = coll.Length;
+//   int index = 1;
+//   while(index < count){
+//     Console.Write(coll[index]+ " ");
+//     index++;
+//   }
+// } 
+
+// int[] arry = new int[cube+1];
+// Cube(arry);
+// PrintArry(arry);
